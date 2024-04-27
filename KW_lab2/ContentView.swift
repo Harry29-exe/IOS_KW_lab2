@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var noOfCards = 2
-    
+//    var emoijs = ["😀", "😂", "🤣", "🙃", "😙", "🤨", "😀", "😂", "🤣", "🙃"]
     @State var emoijs: [String] = []
     @State var activeColor: Color = Color.blue
     
