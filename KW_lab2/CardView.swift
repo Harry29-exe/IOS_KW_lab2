@@ -16,7 +16,7 @@ struct CardView: View {
 
     var body: some View {
         ZStack {
-            base.fill(Color.blue)
+            base.fill()
             
             Group {
                 base.fill(.white)
@@ -26,6 +26,7 @@ struct CardView: View {
             }.opacity(isFaceUp ? 1 : 0)
         
         }
+        .aspectRatio(CGSize(width: 2, height: 3), contentMode: .fill)
         .onTapGesture {
             isFaceUp.toggle()
         }
